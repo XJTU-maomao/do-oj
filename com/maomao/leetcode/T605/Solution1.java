@@ -16,7 +16,6 @@ public class Solution1 {
             flowerbed[flowerbed.length-1] = 1;
             n--;
         }
-        //test
         for (int i = 1; i < flowerbed.length-1; i++) {
             if (flowerbed[i] == 1){
                 i += 1;
