@@ -35,6 +35,7 @@ public class Solution1 {
         return false;
     }
 
+    //test
     public static void main(String[] args) {
         int[] flowerbed = new int[]{1,0,0,0,1};
         System.out.println(canPlaceFlowers(flowerbed, 2));
