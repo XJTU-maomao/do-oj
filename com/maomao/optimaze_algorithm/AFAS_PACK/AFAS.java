@@ -19,11 +19,7 @@ class AFAS {
     private Fish[] fish;
     private Fish bestfish;
     private Fish[] nextfish;
-    private int index; //遍历索引
-    private double[][] vector;
     private int[] choosed;
-    //范围内鱼群数目 fishCount
-    public int scopelength;
 
     public AFAS(){
     }
@@ -37,9 +33,7 @@ class AFAS {
         this.visual = visual;
         fish = new Fish[fishNum];
         nextfish = new Fish[3];
-        vector = new double[fishNum][dim];
         choosed = new int[fishNum];
-        index = 0;
         init();
     }
 

@@ -10,11 +10,9 @@ class Fish {
     private final int dim;    //每条鱼的维度
     int[] x;    //每条鱼的具体多维坐标
     double fit;  //鱼的适应值，浓度
-    private final int visual;   //每条鱼的视野
 
     Fish(int dim, int visual){
         this.dim = dim;
-        this.visual = visual;
         x = new int[dim];
         for (int i = 0; i < dim; i++) {
             x[i] = (int) Math.floor(256*Math.random());
