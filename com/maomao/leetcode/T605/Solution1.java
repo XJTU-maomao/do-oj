@@ -1,7 +1,7 @@
 package maomao.leetcode.T605;
 
-public class Solution1 {
-    public static boolean canPlaceFlowers(int[] flowerbed, int n) {
+class Solution1 {
+    private static boolean canPlaceFlowers(int[] flowerbed, int n) {
         if (n > flowerbed.length/2 + 1){
             return false;
         }

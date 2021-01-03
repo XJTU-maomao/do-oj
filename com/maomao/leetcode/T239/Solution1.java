@@ -12,7 +12,7 @@ import java.util.PriorityQueue;
 /**
  * 优先队列的法子
  */
-public class Solution1 {
+class Solution1 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         if (n < k){
