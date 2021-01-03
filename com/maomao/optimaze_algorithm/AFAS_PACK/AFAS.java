@@ -67,7 +67,7 @@ class AFAS {
 
     /**
      * 评价行为
-     * @param i
+     * @param i  第i条人工鱼
      */
     private void bulletin(int i){
         Fish maxfish = nextfish[0];
@@ -90,7 +90,7 @@ class AFAS {
      * 人工鱼探索周围邻居鱼的最优位置，
      * 当最优位置的目标函数值大于当前位置的目标函数值并且不是很拥挤，则当前位置向最优邻居鱼移动一步，
      * 否则执行觅食行为。
-     * @param i
+     * @param i  第i条人工鱼
      */
     private void  follow(int i){
         nextfish[2] = new Fish(dim, visual);
@@ -134,7 +134,7 @@ class AFAS {
      * 然后把新得到的中心位置的目标函数与当前位置的目标函数相比较，
      * 如果中心位置的目标函数优于当前位置的目标函数并且不是很拥挤，则当前位置向中心位置移动一步，否则执行觅食行为。
      * 鱼聚群时会遵守两条规则：一是尽量向邻近伙伴的中心移动，二是避免过分拥挤。
-     * @param i
+     * @param i  第i条人工鱼
      */
     private void swarm(int i){
         nextfish[1] = new Fish(dim,visual);
@@ -170,7 +170,7 @@ class AFAS {
 
     /**
      * 人工鱼i的觅食行为
-     * @param i
+     * @param i  第i条人工鱼
      */
     private void prey(int i){
         Fish newfish = new Fish(dim,visual);
@@ -202,8 +202,8 @@ class AFAS {
 
     /**
      * 获得鱼i视野范围内的鱼群
-     * @param i
-     * @return
+     * @param i  第i条人工鱼
+     * @return  返回鱼群
      */
     private Fish[] getScopefish(int i) {
         int num = 0;
